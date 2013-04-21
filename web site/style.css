@@ -1,0 +1,282 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: "Visitor";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/visitor.eot?#iefix") format("embedded-opentype"), 
+			url("fonts/visitor.woff") format("woff"), 
+			url("fonts/visitor.ttf") format("truetype");
+}
+
+a {
+	color: #ffcb4e;
+}
+
+#logo {
+	display: block;
+	margin: 50px auto;
+	width: 500px;
+	height: 107px;
+}
+
+#logo > img {
+	border: 0 none;
+}
+
+#main_content {
+	min-height: 150px;
+}
+
+.user_form {
+	width: 385px;
+	margin: 0 auto;
+}
+
+legend {
+	display:block;
+	width: 100%;
+	text-align: center;
+	font-family: Visitor;
+	font-size: 30px;
+	color: #e2ddde;
+	margin-bottom: 10px;
+}
+
+fieldset {
+	border: 1px solid #76787a;
+	padding: 40px
+}
+
+label, .dropdown_label {
+	float: left;
+	display: block;
+	width: 130px;
+	text-align: right;
+	height: 25px;
+    line-height: 22px;
+	margin: 0 10px 30px 0;
+	clear: left;
+}
+
+input {
+	border: 2px solid #ffcb4e;
+	background-color: #181819;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	padding: 2px 5px;
+	width: 140px;
+	height: 17px;
+    line-height: 22px;
+	color: #e2ddde;
+	font-size: 13px;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.error {
+	border: 2px solid #ff5151
+}
+
+.message {
+	color: #ffcb4e;
+	text-align: center;
+	margin-bottom: 30px;
+	clear: both;
+}
+
+button, a#download_btn {
+	border: 2px solid #ffcb4e;
+	background-color: #ffcb4e;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	color: #000;
+	padding: 5px;
+	cursor: pointer;
+    display: block;
+	width: 220px;
+	margin: 0 auto 20px;
+	font-family: Visitor, verdana, sans-serif;
+	font-size: 30px;
+}
+
+button:hover, a#download_btn:hover {
+	background-color: #181819;
+	color: #ffcb4e;
+}
+
+.user_form  a {
+	display: block;
+	text-align: center;
+	color: #ffcb4e;
+	font-size: 10px;
+	font-weight: normal
+}
+
+#success {
+	width: 410px;
+	margin: 70px auto 0;
+	color: #ffcb4e;
+}
+
+h1 {
+	font-family: Visitor, verdana, sans-serif;
+	font-size: 40px;
+}
+
+#success h1 {
+	padding-left: 70px;
+	min-height: 50px;
+	background: url(images/beer.png) left no-repeat;
+	line-height: 50px;
+    vertical-align: bottom;
+}
+
+#success p {
+	text-align: center;
+}
+
+
+#footer {
+	border-top: 4px dashed #1e1e1e;
+	height: 100px;
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+	color: #ffcb4e;
+	padding-top: 30px;
+}
+
+#hackfmi {
+	display: block;
+	width: 200px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#hackfmi img{
+	border: 0 none;
+}
+
+.select_big select{
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	font-size: 13px;
+	height: 21px;
+	line-height: 20px;
+	width: 180px;
+	-webkit-appearance: none;
+	color: #ffcb4e;
+	font-weight: bold;
+	font-family: verdana, sans-serif;
+}
+
+.select_big {
+	height: 21px;
+	float: right;
+	margin-bottom: 30px;
+   width: 150px;
+   overflow: hidden;
+   background: url(images/dropdown.gif) no-repeat right;
+   border: 2px solid #ffcb4e;
+   border-radius: 2px;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+}
+
+.select_small select{
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	font-size: 13px;
+	height: 21px;
+	line-height: 20px;
+	width: 100px;
+	-webkit-appearance: none;
+	color: #ffcb4e;
+	font-weight: bold;
+	font-family: verdana, sans-serif;
+}
+
+.select_small {
+	height: 21px;
+	float: left;
+	margin: 0 0 30px 9px;
+   width: 68px;
+   overflow: hidden;
+   background: url(images/dropdown.gif) no-repeat right;
+   border: 2px solid #ffcb4e;
+   border-radius: 2px;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+}
+ 
+option {
+	font-size: 13px;
+	color: #ffcb4e;
+	font-weight: bold;
+	font-family: verdana, sans-serif;
+	line-height: 20px;
+	height: 20px;
+	border-bottom: 1px dashed #333;
+} 
+
+#content {
+	width: 500px;
+	margin: 0 auto;
+	text-align: justify;
+	font-size: 12px;
+	line-height: 20px
+}
+#content:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+#content  h1 {
+	text-align: center;
+	margin-bottom: 30px
+}
+
+#content  h2 {
+	text-align: center;
+	margin: 20px 0;
+	color: #ffcb4e;
+}
+#content img {
+	float: left;
+	margin: 10px 15px 10px 0;
+	max-width: 100%;
+}
+
+#download_btn {
+	margin-top: 30px!important;
+	text-decoration: none;
+	padding-left: 30px!important;
+	background-image: url(images/download.gif);
+	background-position: 200px 0;
+	background-repeat: no-repeat;
+}
+
+#download_btn:hover {
+	background-position: 200px -35px;
+}
+
