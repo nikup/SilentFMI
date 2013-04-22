@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/imageButtonHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:onClick="imageButton_headerClicked" />
+    
+    
+    <ToggleButton
+        android:id="@+id/toggle_serviceState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/imageButtonHeader"
+        android:text="ToggleButton"
+        android:onClick="toggle_serviceStateHandler" />
+
+    <TextView
+        android:id="@+id/textMute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggle_serviceState"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/toggle_serviceState"
+        android:text="@string/toggle_service"
+        android:textAlignment="center" />
+
+    <ToggleButton
+        android:id="@+id/toggle_updating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggle_serviceState"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"
+        android:text="ToggleButton"
+        android:onClick="toggle_updatingStateHandler" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggle_serviceState"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:inputType="text"
+        android:minWidth="100dp" />
+
+    <TextView
+        android:id="@+id/text_autoUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggle_updating"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/toggle_updating"
+        android:text="@string/auto_update"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textInputUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_username"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/edit_username"
+        android:text="@string/username_string" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/update_button"
+        android:onClick="button_updateScheduleHandler" />
+
+    <TextView
+        android:id="@+id/text_lastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_update"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+
+</RelativeLayout>
